@@ -44,7 +44,7 @@ function BlogModal() {
         return;
       }
     } else {
-      alert("unable to delete");
+      alert("unable to delete. You are not the owner of this content");
     }
   }
 
