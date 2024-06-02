@@ -75,21 +75,26 @@ function UserEdit() {
   //   });
 
   async function editUserData(formprops) {
-    let token = sessionStorage.getItem("token");
-    let req = await axios.put(
-      `http://localhost:5000/users/editUser/${[params.id]}`,
-      formprops,
-      {
-        headers: { authorization: `Bearer ${token}` },
-      }
-    );
-    if (req.status == 200) {
-      console.log(req);
-      setAllUsers(() => [
-        ...AllUsers.filter((e) => e.id !== editItem.id),
+    try {
+      //   http://localhost:5000/users/editUser/${params.id}
+      let token = sessionStorage.getItem("token");
+      let req = await axios.put(
+        `https://worldwiseblog.onrender.com/users/editUser/${params.id}`,
         formprops,
-      ]);
-      navigate("/allUsers");
+        {
+          headers: { authorization: `Bearer ${token}` },
+        }
+      );
+      if (req.status == 200) {
+        console.log(req);
+        setAllUsers(() => [
+          ...AllUsers.filter((e) => e.id !== editItem.id),
+          formprops,
+        ]);
+        navigate("/allUsers");
+      }
+    } catch (error) {
+      console.log(error);
     }
   }
 

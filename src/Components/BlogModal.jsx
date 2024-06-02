@@ -16,7 +16,8 @@ function BlogModal() {
 
   async function getDisplayItem(id) {
     try {
-      let req = await axios.get("http://localhost:5000/blogs");
+      // http://localhost:5000/blogs
+      let req = await axios.get("https://worldwiseblog.onrender.com/blogs");
       //   console.log(req.data.result);
       let data = req.data.result;
 
@@ -48,7 +49,10 @@ function BlogModal() {
   }
 
   async function deleteBlog(id) {
-    let res = await axios.delete(`http://localhost:5000/blogs/${id}`);
+    // http://localhost:5000/blogs/${id}
+    let res = await axios.delete(
+      `https://worldwiseblog.onrender.com/blogs/${id}`
+    );
     if (res.status == 200) {
       navigate("/home");
     }

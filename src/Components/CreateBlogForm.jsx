@@ -11,8 +11,9 @@ function CreateBlogForm() {
   let author = sessionStorage.getItem("Name");
   async function createNewBlog(formprops) {
     try {
+      // http://localhost:5000/blogs/createBlog
       let req = await axios.post(
-        "http://localhost:5000/blogs/createBlog",
+        "https://worldwiseblog.onrender.com/blogs/createBlog",
         formprops
       );
       if (req.status == 200) {

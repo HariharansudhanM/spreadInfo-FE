@@ -50,12 +50,13 @@ function Register() {
     console.log(request);
 
     try {
+      //"http://localhost:5000/users/register"
       const res = await axios.post(
-        "http://localhost:5000/users/register",
+        "https://worldwiseblog.onrender.com/users/register",
         request
       );
       if (res.status == 200) {
-        Navigate("/home");
+        Navigate("/login");
         console.log(res.data.message);
       }
     } catch (error) {
