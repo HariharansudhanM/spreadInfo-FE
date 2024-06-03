@@ -15,7 +15,7 @@ function BlogDashboard() {
     try {
       let req = await axiosService.get(ApiRoutes.getBlogs.path);
       if (req.status == 200) {
-        console.log("Load success", req.data.result);
+        // console.log("Load success", req.data.result);
         if (allBlogs.length < 1) {
           setAllBlogs(() => [...allBlogs, ...req.data.result]);
         }

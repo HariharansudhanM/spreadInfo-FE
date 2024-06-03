@@ -47,7 +47,7 @@ function Register() {
       Country: country,
       Name: name,
     };
-    console.log(request);
+    // console.log(request);
 
     try {
       //"http://localhost:5000/users/register"
@@ -57,7 +57,7 @@ function Register() {
       );
       if (res.status == 200) {
         Navigate("/login");
-        console.log(res.data.message);
+        // console.log(res.data.message);
       }
     } catch (error) {
       console.log(error);

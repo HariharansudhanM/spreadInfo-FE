@@ -27,7 +27,7 @@ function UserEdit() {
     try {
       getUserData();
 
-      console.log(editItem);
+      //   console.log(editItem);
     } catch (error) {
       console.log(error);
     }
@@ -86,7 +86,7 @@ function UserEdit() {
         }
       );
       if (req.status == 200) {
-        console.log(req);
+        // console.log(req);
         setAllUsers(() => [
           ...AllUsers.filter((e) => e.id !== editItem.id),
           formprops,
@@ -105,7 +105,7 @@ function UserEdit() {
       const formprops = Object.fromEntries(formData);
       editUserData(formprops);
 
-      console.log(formprops);
+    //   console.log(formprops);
     } catch (error) {
       console.log(error);
     }

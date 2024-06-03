@@ -18,7 +18,7 @@ function CreateBlogForm() {
       );
       if (req.status == 200) {
         navigate("/home");
-        console.log(req);
+        // console.log(req);
       }
     } catch (error) {
       console.log(error);
@@ -32,7 +32,7 @@ function CreateBlogForm() {
     const formprops = Object.fromEntries(formData);
     createNewBlog(formprops);
 
-    console.log(formprops);
+    // console.log(formprops);
   }
   return (
     <>

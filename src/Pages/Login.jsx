@@ -40,7 +40,7 @@ function Login() {
       Email: email,
       Password: password,
     };
-    console.log(inputData);
+    // console.log(inputData);
 
     try {
       //"http://localhost:5000/users/login"
@@ -53,7 +53,7 @@ function Login() {
         sessionStorage.setItem("Role", res.data.Role);
         sessionStorage.setItem("Name", res.data.Name);
         Navigate("/home");
-        console.log(res.data);
+        // console.log(res.data);
       }
     } catch (error) {
       console.log(error);

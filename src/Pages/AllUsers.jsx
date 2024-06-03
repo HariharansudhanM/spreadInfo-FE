@@ -35,7 +35,7 @@ function AllUsers() {
 
       return req.data;
     } catch (error) {
-      console.log(error.response.data.message);
+      // console.log(error.response.data.message);
       if (error.response.data.message == "jwt expired") {
         navigate("/login");
       }
@@ -45,7 +45,7 @@ function AllUsers() {
   useEffect(() => {
     if (!(AllUsers.length > 0)) {
       getAllUsers();
-      console.log(changeFlag);
+      // console.log(changeFlag);
     }
   }, [changeFlag]);
 
