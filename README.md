@@ -1,4 +1,4 @@
-# React + Vite
+<img width="1199" alt="image" src="https://github.com/HariharansudhanM/spreadInfo-FE/assets/152277436/9e086b3a-5c3f-4215-8bcb-c3f3d5edee1c"># React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -21,3 +21,9 @@ _ Admin panel will be displayed only to the admins. \* Admin will be able to edi
 User :
 _ Users will be able to upload their post and can see the other posts.
 _ Users can able to delete their own post. \* Users cannot delete the post uploaded by another user.
+
+
+Credentials to use :
+Email : admin@gmai.com  
+password : Admin@12
+
