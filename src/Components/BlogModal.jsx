@@ -97,6 +97,14 @@ function BlogModal() {
                   Close
                 </Link>
                 {"   "}
+                <Link
+                  to={`/editblog/${displayItem.id}`}
+                  className="btn btn-success"
+                >
+                  Edit
+                </Link>
+                {"   "}
+
                 <button
                   type="button"
                   className="btn btn-danger"

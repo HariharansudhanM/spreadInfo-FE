@@ -13,6 +13,9 @@ const ApiRoutes = {
   getBlogs: {
     path: "/blogs",
   },
+  editBlog: {
+    path: "/blogs/editBlog/:id",
+  },
 };
 
 export default ApiRoutes;

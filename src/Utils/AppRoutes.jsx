@@ -10,6 +10,7 @@ import CreateBlog from "../Pages/CreateBlog";
 import UserEdit from "../Components/UserEdit";
 import AllUsers from "../Pages/AllUsers";
 import BlogModalPage from "../Pages/BlogModalPage";
+import EditBlog from "../Pages/EditBlog";
 
 const appRouter = [
   {
@@ -47,6 +48,10 @@ const appRouter = [
   {
     path: "/blogModelPage/:id",
     element: <BlogModalPage />,
+  },
+  {
+    path: "/editBlog/:id",
+    element: <EditBlog />,
   },
   {
     path: "*",
