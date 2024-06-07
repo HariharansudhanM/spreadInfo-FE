@@ -16,14 +16,15 @@ Type of Users in the Application.
 
 Admin :
 _ Admins will have full control over the application.
-_ Admin panel will be displayed only to the admins. \* Admin will be able to edit and delete user data
+_ Admin panel will be displayed only to the admins. \* Admin will be able to edit and delete user records.
 
 User :
 _ Users will be able to upload their post and can see the other posts.
 _ Users can able to delete their own post. \* Users cannot delete the post uploaded by another user.
 
 
+
 Credentials to use :
-Email : admin@gmai.com  
+Email : admin@gmail.com  
 password : Admin@12
 
