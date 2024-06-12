@@ -9,6 +9,7 @@ function BlogModal() {
 
   const [displayItem, setDisplayItem] = useState({});
   const { allBlogs, setAllBlogs } = useContext(BlogContext);
+  const Author = sessionStorage.getItem("Author");
 
   useEffect(() => {
     getDisplayItem(id);
@@ -97,6 +98,7 @@ function BlogModal() {
                   Close
                 </Link>
                 {"   "}
+
                 <Link
                   to={`/editblog/${displayItem.id}`}
                   className="btn btn-success"
