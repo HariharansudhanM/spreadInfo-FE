@@ -27,11 +27,13 @@ function ForgotPassword() {
         );
 
         navigate("/landingPage");
-      } else {
+      } else if (res.status == 400) {
+        alert(res.data.message);
         console.log(res.data.message);
       }
     } catch (error) {
       console.log(error);
+      alert(error.response.data.message);
     }
   }
   return (
